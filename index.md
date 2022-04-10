@@ -176,7 +176,8 @@ insertar imagenes em github (webpage):
 usar ! [comentario] (url) sin espacios,  (el link entre parentesis)
 ejemplo (quitar espacio y se verá la imagen insertada: 
  
- \ ! [imagen de gatito](https://ejemplo-el-meme-del-gato-en-la-mesa-portada.jpg )
+ \ ! [imagen de gatito] ( https:// ejemplo-el-meme-del-gato-en-la-mesa-portada.jpg )
+ 
  
  ![imagen de gatito](https://cdn2.actitudfem.com/media/files/styles/big_img/public/images/2019/08/de-donde-salio-el-meme-del-gato-en-la-mesa-portada.jpg)
  
