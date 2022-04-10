@@ -24,3 +24,9 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
 ## MS-DOS
 
 ## Bash Linux
+
+## Gitbhub pages
+
+insertar imagenes:
+usar ! y el link entre ()
+![imagen de prueba desde mi flickr](https://cdn2.actitudfem.com/media/files/styles/big_img/public/images/2019/08/de-donde-salio-el-meme-del-gato-en-la-mesa-portada.jpg)
