@@ -4,7 +4,7 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
 
 
 
-### Markdown
+### Nota Importante
 
 *Importante es que algunas de las sintaxix, requieren librerias, o conocimiento previo, o en algunos casos que se cumplan ciertos requisitos o supuestos, trataré de dejarlos indicados con una nota en dicho comando. (*)
 
