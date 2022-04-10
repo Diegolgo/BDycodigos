@@ -11,6 +11,7 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
 
 
 ## Excel ( y VB)
+
 <details><summary> mostrar </summary>
 <p> 
  
@@ -18,6 +19,7 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
 </details>
 
 ## R
+
 <details><summary> mostrar </summary>
 <p> 
  
@@ -25,6 +27,7 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
 </details>
 
 ## Python
+
 <details><summary> mostrar </summary>
 <p> 
  
@@ -32,6 +35,7 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
 </details>
 
 ## SQL (consultas)
+
 <details><summary> mostrar </summary>
 <p> 
  
@@ -39,19 +43,22 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
 </details>
 
 ## STATA
+
 <details><summary> mostrar </summary>
 <p> 
  </p>
 </details>
 
 ## SPSS
+
 <details><summary> mostrar </summary>
 <p> 
 
  </p>
 </details>
 
-## MS-DOS
+## MS-DOS Windows
+
 <details><summary> mostrar </summary>
 <p> 
 
