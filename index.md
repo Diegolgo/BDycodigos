@@ -6,7 +6,7 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+*Importante es que algunas de las sintaxix, requieren librerias, o conocimiento previo, o en algunos casos que se cumplan ciertos requisitos o supuestos, trataré de dejarlos indicados con una nota en dicho comando. (*)
 
 ```markdown
 Syntax highlighted code block
