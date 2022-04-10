@@ -203,19 +203,36 @@ bloquear bootloader % ojo que al desbloquear o bloquear el bootloader el telefon
 <details><summary>ocultar texto, para expandir al hacer click (collapse), (eliminar los espacios despues de cada < ) </summary>
 <p>
 
-< details>< summary>click para mostrar< /summary>
-< p>
- 
-  escribir aqui el texto a expandir.
- 
-< /p>
-< /details>
 
-  </p>
+ </p>
+</details>
+
+<details>< summary>click para mostrar</summary>
+<p>
+ < details>< summary>click para mostrar< / summary>
+< p>
+ escribir aqui el texto a expandir. (sin espacios)
+ < /p>
+< /details>
+ 
+</p>
 </details>
 
 
 
+<details><summary>usar themes en github</summary>
+<p>
+ 
+Para usar themes en github con Ruby, se necesita instalar antes de usar en Fedora usar el siguiente comando antes de realizar el bundle.
+ - sudo dnf install ruby ruby-devel openssl-devel redhat-rpm-config @development-tools
+ - fuente y otras distros: https://jekyllrb.com/docs/installation/other-linux/
+ 
+</p>
+</details>
+
+ 
+ 
+ 
  <details><summary>insertar imagenes em github (webpage):</summary>
 <p>
 usar ! [comentario] (url) sin espacios,  (el link entre parentesis)
