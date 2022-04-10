@@ -110,15 +110,19 @@ herramientas para usar adb y fastboot en linux
 ## Android
 usar adb
 
-
+<details><summary>click para mostrar</summary>
+<p>
 abrir cmd, navegar a la carpeta de ADB (se debe instalar), o abrir ventana de comandos en dicha carpeta, por ej: cd/adb
 adb devices
 si el dispositivo esta activo, y con modo de depuracion activado via usb, se vera su codigo. en caso contrario habilitarlo en android.
 
-usar adb
-adb restart bootloader
-adb restart 
-
+para iniciar el bootloader (desde android, conectado por usb)
+- adb restart bootloader
+ 
+para reiniciar el dispositivo
+- adb restart 
+</p>
+</details>
 
 desbloquear bootloader (en modo fastboot)
 <details><summary>click para mostrar</summary>
@@ -170,6 +174,12 @@ insertar imagenes em github (webpage):
  <details><summary>click para mostrar</summary>
 <p>
 usar ! [comentario] (url) sin espacios,  (el link entre parentesis)
-ejemplo (quitar _ y se verá la imagen insertada: !_[imagen de gatito](https://cdn2.actitudfem.com/media/files/styles/big_img/public/images/2019/08/de-donde-salio-el-meme-del-gato-en-la-mesa-portada.jpg)
+ejemplo (quitar espacio y se verá la imagen insertada: 
+ 
+ \ ! [imagen de gatito](https://ejemplo-el-meme-del-gato-en-la-mesa-portada.jpg )
+ 
+ ![imagen de gatito](https://cdn2.actitudfem.com/media/files/styles/big_img/public/images/2019/08/de-donde-salio-el-meme-del-gato-en-la-mesa-portada.jpg)
+ 
+ 
   </p>
 </details>
