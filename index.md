@@ -54,10 +54,59 @@ Como cambiar modo de disco duro a AHCI sin formatear:
 </p>
 </details>
 
+crear .bat para cerrar programas que no se usan 
+<details><summary>click para mostrar</summary>
+<p>
+(por ejemplo, antes de editar, o usar algun software muy pesado)
 
+- creamos un archivo de texto, lo renombramos a xxx.bat y escribimos lo siguiente:
+- echo off
+- taskkil /im nombredelproceso.exe /F
+- echo off
+- exit
+</p>
+</details>
+
+
+
+desactivar programas especificos o paquetes en windows10 (11)
+
+<details><summary>click para mostrar</summary>
+<p>
+
+  listar aplicaciones
+
+   - DISM /Online /Get–ProvisionedAppxPackages | select–string Packagename
+
+  desinstalarlas (cambiando nombre del paquete)
+
+   - DISM /Online /Remove–ProvisionedAppxPackage /PackageName:PACKAGENAME
+
+</p>
+</details>
+
+realizar escaneo, limpieza de estructura de SO windows en cmd
+<details><summary>click para mostrar</summary>
+<p>
+ 
+- sfc /scannow
+- DISM.exe /Online /Cleanup-image /Restorehealth
+ 
+</p>
+</details>
 
 ## Bash Linux
 
+herramientas para usar adb y fastboot en linux
+<details><summary>click para mostrar</summary>
+<p>
+ 
+- sudo apt-get install android-tools-adb 
+- sudo apt-get install android-tools-fastboot
+ 
+</p>
+</details>
+ 
 ## Android
 usar adb
 
@@ -70,17 +119,18 @@ usar adb
 adb restart bootloader
 adb restart 
 
+
+desbloquear bootloader (en modo fastboot)
 <details><summary>click para mostrar</summary>
 <p>
  
-desbloquear bootloader (en modo fastboot)
-fastboot flashing unlock
-fastboot flashin unlock_critical
+- fastboot flashing unlock
+- fastboot flashin unlock_critical
 
 bloquear bootloader % ojo que al desbloquear o bloquear el bootloader el telefono se reinicia de fabrica %
 
-fastboot flashing lock
-fastboot flashing lock_critical
+- fastboot flashing lock
+- fastboot flashing lock_critical
 
  
 </p>
@@ -116,6 +166,10 @@ ocultar texto, para expandir al hacer click (collapse), (eliminar los espacios d
 </details>
 
 
-insertar imagenes:
+insertar imagenes em github (webpage):
+ <details><summary>click para mostrar</summary>
+<p>
 usar ! [comentario] (url) sin espacios,  (el link entre parentesis)
 ejemplo (quitar _ y se verá la imagen insertada: !_[imagen de gatito](https://cdn2.actitudfem.com/media/files/styles/big_img/public/images/2019/08/de-donde-salio-el-meme-del-gato-en-la-mesa-portada.jpg)
+  </p>
+</details>
