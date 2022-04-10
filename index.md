@@ -11,22 +11,52 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
 
 
 ## Excel ( y VB)
+<details><summary> mostrar </summary>
+<p> 
+ 
+ </p>
+</details>
 
 ## R
+<details><summary> mostrar </summary>
+<p> 
+ 
+ </p>
+</details>
 
 ## Python
+<details><summary> mostrar </summary>
+<p> 
+ 
+ </p>
+</details>
 
 ## SQL (consultas)
+<details><summary> mostrar </summary>
+<p> 
+ 
+ </p>
+</details>
 
 ## STATA
+<details><summary> mostrar </summary>
+<p> 
+ </p>
+</details>
 
 ## SPSS
+<details><summary> mostrar </summary>
+<p> 
+
+ </p>
+</details>
 
 ## MS-DOS
+<details><summary> mostrar </summary>
+<p> 
 
-Usar MS-DOS (CMD) o command.com o consola de comandos.
 
-<details><summary>click para mostrar</summary>
+<details><summary>Usar MS-DOS (CMD) o command.com o consola de comandos.</summary>
 <p>
   
   - inicio
@@ -39,23 +69,23 @@ Usar MS-DOS (CMD) o command.com o consola de comandos.
 </p>
 </details>
 
-Como cambiar modo de disco duro a AHCI sin formatear:
 
-<details><summary>click para mostrar</summary>
+
+<details><summary>Como cambiar modo de disco duro a AHCI sin formatear:</summary>
 <p>
 
-- cmd (modo admin)
-- bcdedit /set {current} safeboot minimal
- #### reiniciar a la bios, activar modo ACHI y listo. entrar a windows de nuevo
-- cmd
-- bcdedit /deletevalue {current} safeboot
-- reiniciar
+ - cmd (modo admin)
+ - bcdedit /set {current} safeboot minimal
+   #### reiniciar a la bios, activar modo ACHI y listo. entrar a windows de nuevo
+ - cmd
+ - bcdedit /deletevalue {current} safeboot
+ - reiniciar
  
 </p>
 </details>
 
-crear .bat para cerrar programas que no se usan 
-<details><summary>click para mostrar</summary>
+
+<details><summary>crear .bat para cerrar programas que no se usan </summary>
 <p>
 (por ejemplo, antes de editar, o usar algun software muy pesado)
 
@@ -69,9 +99,9 @@ crear .bat para cerrar programas que no se usan
 
 
 
-desactivar programas especificos o paquetes en windows10 (11)
 
-<details><summary>click para mostrar</summary>
+
+<details><summary>desactivar programas especificos o paquetes en windows10 (11)</summary>
 <p>
 
   listar aplicaciones
@@ -85,11 +115,13 @@ desactivar programas especificos o paquetes en windows10 (11)
 </p>
 </details>
 
-realizar escaneo, limpieza de estructura de SO windows en cmd
-<details><summary>click para mostrar</summary>
+
+
+<details><summary>realizar escaneo, limpieza de estructura de SO windows en cmd</summary>
 <p>
  
 - sfc /scannow
+
 - DISM.exe /Online /Cleanup-image /Restorehealth
  
 </p>
@@ -97,8 +129,8 @@ realizar escaneo, limpieza de estructura de SO windows en cmd
 
 ## Bash Linux
 
-herramientas para usar adb y fastboot en linux
-<details><summary>click para mostrar</summary>
+
+<details><summary>herramientas para usar adb y fastboot en linux</summary>
 <p>
  
 - sudo apt-get install android-tools-adb 
@@ -106,11 +138,13 @@ herramientas para usar adb y fastboot en linux
  
 </p>
 </details>
- 
-## Android
-usar adb
+</p>
+</details>
 
-<details><summary>click para mostrar</summary>
+## Android
+
+
+<details><summary>usar adb</summary>
 <p>
 abrir cmd, navegar a la carpeta de ADB (se debe instalar), o abrir ventana de comandos en dicha carpeta, por ej: cd/adb
 adb devices
@@ -124,8 +158,8 @@ para reiniciar el dispositivo
 </p>
 </details>
 
-desbloquear bootloader (en modo fastboot)
-<details><summary>click para mostrar</summary>
+
+<details><summary>desbloquear bootloader (en modo fastboot)</summary>
 <p>
  
 - fastboot flashing unlock
@@ -140,9 +174,9 @@ bloquear bootloader % ojo que al desbloquear o bloquear el bootloader el telefon
 </p>
 </details>
 
-otro
 
-<details><summary>click para mostrar</summary>
+
+<details><summary>otro</summary>
 <p>
  
   escribir aqui el texto a expandir.
@@ -150,12 +184,16 @@ otro
 </p>
 </details>
 
+</p>
+</details>
 
-## Gitbhub pages
+##   Gitbhub pages 
 
-ocultar texto, para expandir al hacer click (collapse), (eliminar los espacios despues de cada < ) 
+<details><summary> mostrar </summary>
+<p> 
 
-<details><summary>click para mostrar</summary>
+
+<details><summary>ocultar texto, para expandir al hacer click (collapse), (eliminar los espacios despues de cada < ) </summary>
 <p>
 
 < details>< summary>click para mostrar< /summary>
@@ -170,8 +208,8 @@ ocultar texto, para expandir al hacer click (collapse), (eliminar los espacios d
 </details>
 
 
-insertar imagenes em github (webpage):
- <details><summary>click para mostrar</summary>
+
+ <details><summary>insertar imagenes em github (webpage):</summary>
 <p>
 usar ! [comentario] (url) sin espacios,  (el link entre parentesis)
 ejemplo (quitar espacio y se verá la imagen insertada: 
@@ -184,3 +222,7 @@ ejemplo (quitar espacio y se verá la imagen insertada:
  
   </p>
 </details>
+
+ </p>
+</details>
+ 
