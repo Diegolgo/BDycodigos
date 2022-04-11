@@ -133,7 +133,7 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
  </p>
 </details>
 
- ## Bash Linux
+## Bash Linux
 
 <details><summary>mostrar</summary>
 <p>
@@ -202,7 +202,7 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
 <p> 
 
 
-  <details><summary>ocultar texto, para expandir al hacer click (collapse), (eliminar los espacios despues de cada < ) </summary>
+  <details><summary>ocultar texto, para expandir al hacer click (collapse), (eliminar los espacios despues de cada <)</summary>
   <p>
 
 
@@ -211,11 +211,11 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
 
   <details>< summary>click para mostrar</summary>
   <p>
-   < details>< summary>click para mostrar< / summary>
-  < p>
-   escribir aqui el texto a expandir. (sin espacios)
-   < /p>
-  < /details>
+     < details>< summary>click para mostrar< / summary>
+    < p>
+     escribir aqui el texto a expandir. (sin espacios)
+     < /p>
+    < /details>
 
   </p>
   </details>
