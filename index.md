@@ -72,7 +72,7 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
     - cmd
 
     - para ejecutarlo en modo administrador, segundo boton del mouse en el icono de la aplicacion, "ejecutar como administrador" 
-
+   
   </p>
   </details>
 
@@ -130,6 +130,22 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
   </p>
   </details>
 
+   <details><summary>quitar el bloatware de windows 10 o win11</summary>
+  <p>
+
+  - abrir powershell como admin y ejecutar el siguiente codigo:
+     - <code>  iwr -useb https://git.io/debloat|iex </code>
+     
+     - esto creará un punto de restauracion del sistema, y lanzara un script .bat (descrito en github) con el cual puedes quitar lo innecesario de windows
+
+  - acceso al proyecto en github https://gist.github.com/jumarag/738fd121c8f3a37cc6240993853a6977
+
+  </p>
+  </details>
+
+ 
+ 
+ 
  </p>
 </details>
 
