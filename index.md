@@ -66,12 +66,10 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
   <details><summary>Usar MS-DOS (CMD) o command.com o consola de comandos.</summary>
   <p>
 
-    - inicio
-    - ejecutar o buscar
-
-    - cmd
-
-    - para ejecutarlo en modo administrador, segundo boton del mouse en el icono de la aplicacion, "ejecutar como administrador" 
+   - inicio
+   - ejecutar o buscar
+   - cmd
+   - para ejecutarlo en modo administrador, segundo boton del mouse en el icono de la aplicacion, "ejecutar como administrador" 
    
   </p>
   </details>
@@ -82,10 +80,10 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
   <p>
 
    - cmd (modo admin)
-   - bcdedit /set {current} safeboot minimal
+   - <code> bcdedit /set {current} safeboot minimal </code>
      #### reiniciar a la bios, activar modo ACHI y listo. entrar a windows de nuevo
    - cmd
-   - bcdedit /deletevalue {current} safeboot
+   - <code> bcdedit /deletevalue {current} safeboot </code>
    - reiniciar
 
   </p>
@@ -96,24 +94,24 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
   <p>
   (por ejemplo, antes de editar, o usar algun software muy pesado)
 
-  - creamos un archivo de texto, lo renombramos a xxx.bat y escribimos lo siguiente:
-  - echo off
-  - taskkil /im nombredelproceso.exe /F
-  - echo off
-  - exit
+   - creamos un archivo de texto, lo renombramos a xxx.bat y escribimos lo siguiente:
+   - echo off
+   - taskkil /im nombredelproceso.exe /F
+   - echo off
+   - exit
   </p>
   </details>
 
   <details><summary>desactivar programas especificos o paquetes en windows10 (11)</summary>
   <p>
 
-    listar aplicaciones
+   listar aplicaciones
 
-     - DISM /Online /Get–ProvisionedAppxPackages | select–string Packagename
+    - DISM /Online /Get–ProvisionedAppxPackages | select–string Packagename
 
-    desinstalarlas (cambiando nombre del paquete)
+   desinstalarlas (cambiando nombre del paquete)
 
-     - DISM /Online /Remove–ProvisionedAppxPackage /PackageName:PACKAGENAME
+    - DISM /Online /Remove–ProvisionedAppxPackage /PackageName:PACKAGENAME
 
   </p>
   </details>
@@ -123,9 +121,9 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
   <details><summary>realizar escaneo, limpieza de estructura de SO windows en cmd</summary>
   <p>
 
-  - sfc /scannow
+   - <code> sfc /scannow </code>
 
-  - DISM.exe /Online /Cleanup-image /Restorehealth
+   - <code> DISM.exe /Online /Cleanup-image /Restorehealth </code>
 
   </p>
   </details>
@@ -133,12 +131,12 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
    <details><summary>quitar el bloatware de windows 10 o win11</summary>
   <p>
 
-  - abrir powershell como admin y ejecutar el siguiente codigo:
-     - <code>  iwr -useb https://git.io/debloat|iex </code>
-     
-     - esto creará un punto de restauracion del sistema, y lanzara un script .bat (descrito en github) con el cual puedes quitar lo innecesario de windows
+   - abrir powershell como admin y ejecutar el siguiente codigo:
+      - <code>  iwr -useb https://git.io/debloat|iex </code>
 
-  - acceso al proyecto en github https://gist.github.com/jumarag/738fd121c8f3a37cc6240993853a6977
+      - esto creará un punto de restauracion del sistema, y lanzara un script .bat (descrito en github) con el cual puedes quitar lo innecesario de windows
+
+   - acceso al proyecto en github https://gist.github.com/jumarag/738fd121c8f3a37cc6240993853a6977
 
   </p>
   </details>
