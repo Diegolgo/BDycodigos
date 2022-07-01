@@ -7,7 +7,10 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
 
 ### Nota Importante
 
-*Algunas de las sintaxix, requieren librerias, o conocimiento previo, o en algunos casos que se cumplan ciertos requisitos o supuestos, trataré de dejarlos indicados con una nota en dicho comando. (*)
+*Algunas de las sintaxix, requieren librerias, o conocimiento previo, o en algunos casos que se cumplan ciertos requisitos o supuestos, trataré de dejarlos indicados con una nota en dicho comando. ( *)
+donaciones
+
+https://www.paypal.com/donate/?hosted_button_id=GY2TVWP39V952
 
 
 ## Excel ( y VB)
@@ -154,8 +157,30 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
    <details><summary>herramientas para usar adb y fastboot en linux</summary>
   <p>
 
+  La mayor parte del tiempo he usado distribuciones basadas en debian, por lo que los comandos estan enfocados en ubuntu (probados 2022)
+  - sudo apt-get update
+  
   - sudo apt-get install android-tools-adb 
   - sudo apt-get install android-tools-fastboot
+   
+  maquina virtual MACOS:
+   - descargar el paquete https://github.com/foxlet/macOS-Simple-KVM/archive/refs/heads/master.zip
+   instalar:
+      - sudo apt-get install qemu-system qemu-utils python3 python3-pip
+   crear una carpeta con espacio suficiente para la maquina virtual (64gb por defecto en estos comandos)
+   abrir terminal en la carpeta descarga, ya descomprimida y ejecutar (Agregar --high-sierra, --mojave, por defecto baja catalina)
+   - bash jumpstart.sh
+   el comando anterior descargará un archivo BaseSystem.img
+   crear el archivo que contendrá la maquina virtual
+   - qemu-img create -f qcow2 MyDisk.qcow2 64G
+   abrir con editor de texto el basic.sh y pegar las siguientes lineas al final (si cambiaron el nombre MyDisk poner el que corresponda:
+    -drive id=SystemDisk,if=none,file=MyDisk.qcow2 \
+    -device ide-hd,bus=sata.4,drive=SystemDisk \
+   en el mismo archivo, se puede editar la memoria y la cantidad de nucleos, hilos.
+   
+   
+   
+   
 
   </p>
   </details>
