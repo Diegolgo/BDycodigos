@@ -10,7 +10,7 @@ La siguiente es informacion que he recopilado a lo largo de los años, trabajand
 *Algunas de las sintaxix, requieren librerias, o conocimiento previo, o en algunos casos que se cumplan ciertos requisitos o supuestos, trataré de dejarlos indicados con una nota en dicho comando. ( *)
 donaciones
 
-https://www.paypal.com/donate/?hosted_button_id=GY2TVWP39V952
+<web> https://www.paypal.com/donate/?hosted_button_id=GY2TVWP39V952 </web>
 
 
 ## Excel ( y VB)
@@ -78,6 +78,22 @@ https://www.paypal.com/donate/?hosted_button_id=GY2TVWP39V952
   </details>
 
 
+ <details><summary> crear textos con detalle de contenido </summary>
+<p> 
+
+   - cmd
+   - para ejecutarlo en modo administrador, segundo boton del mouse en el icono de la aplicacion, "ejecutar como administrador" 
+   - entrar en el directorio que necesito mapear
+   - <code> tree >nombredearchivo.txt /f /a </code>
+   - <code> dir /s /w >nombrededirectorio.txt </code>
+   
+  </p>
+  </details>
+ 
+ 
+ 
+ 
+ 
 
   <details><summary>Como cambiar modo de disco duro a AHCI sin formatear:</summary>
   <p>
@@ -110,11 +126,10 @@ https://www.paypal.com/donate/?hosted_button_id=GY2TVWP39V952
 
    listar aplicaciones
 
-    - DISM /Online /Get–ProvisionedAppxPackages | select–string Packagename
-
+   - <code> DISM /Online /Get–ProvisionedAppxPackages | select–string Packagename </code>
+   
    desinstalarlas (cambiando nombre del paquete)
-
-    - DISM /Online /Remove–ProvisionedAppxPackage /PackageName:PACKAGENAME
+   - <code> DISM /Online /Remove–ProvisionedAppxPackage /PackageName:PACKAGENAME </code>
 
   </p>
   </details>
@@ -135,11 +150,12 @@ https://www.paypal.com/donate/?hosted_button_id=GY2TVWP39V952
   <p>
 
    - abrir powershell como admin y ejecutar el siguiente codigo:
-      - <code>  iwr -useb https://git.io/debloat|iex </code>
+   
+   - <code>  iwr -useb https://git.io/debloat|iex </code>
 
-      - esto creará un punto de restauracion del sistema, y lanzara un script .bat (descrito en github) con el cual puedes quitar lo innecesario de windows
-
-   - acceso al proyecto en github https://gist.github.com/jumarag/738fd121c8f3a37cc6240993853a6977
+   - esto creará un punto de restauracion del sistema, y lanzara un script .bat (descrito en github) con el cual puedes quitar lo innecesario de windows 
+   
+   - acceso al proyecto en github <code> https://gist.github.com/jumarag/738fd121c8f3a37cc6240993853a6977 </code>
 
   </p>
   </details>
