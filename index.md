@@ -69,9 +69,13 @@ donaciones
   <details><summary>Usar MS-DOS (CMD) o command.com o consola de comandos.</summary>
   <p>
 
+   
    - inicio
+   
    - ejecutar o buscar
+   
    - cmd
+   
    - para ejecutarlo en modo administrador, segundo boton del mouse en el icono de la aplicacion, "ejecutar como administrador" 
    
   </p>
@@ -81,10 +85,15 @@ donaciones
  <details><summary> crear textos con detalle de contenido </summary>
 <p> 
 
+ 
    - cmd
+ 
    - para ejecutarlo en modo administrador, segundo boton del mouse en el icono de la aplicacion, "ejecutar como administrador" 
+ 
    - entrar en el directorio que necesito mapear
+ 
    - <code> tree >nombredearchivo.txt /f /a </code>
+ 
    - <code> dir /s /w >nombrededirectorio.txt </code>
    
   </p>
@@ -99,10 +108,15 @@ donaciones
   <p>
 
    - cmd (modo admin)
+   
    - <code> bcdedit /set {current} safeboot minimal </code>
+   
      #### reiniciar a la bios, activar modo ACHI y listo. entrar a windows de nuevo
+   
    - cmd
+   
    - <code> bcdedit /deletevalue {current} safeboot </code>
+   
    - reiniciar
 
   </p>
@@ -118,6 +132,7 @@ donaciones
    - taskkil /im nombredelproceso.exe /F
    - echo off
    - exit
+   
   </p>
   </details>
 
@@ -125,11 +140,15 @@ donaciones
   <p>
 
    listar aplicaciones
+   
 
    - <code> DISM /Online /Get–ProvisionedAppxPackages | select–string Packagename </code>
    
+   
    desinstalarlas (cambiando nombre del paquete)
+   
    - <code> DISM /Online /Remove–ProvisionedAppxPackage /PackageName:PACKAGENAME </code>
+   
 
   </p>
   </details>
@@ -140,8 +159,10 @@ donaciones
   <p>
 
    - <code> sfc /scannow </code>
+   
 
    - <code> DISM.exe /Online /Cleanup-image /Restorehealth </code>
+   
 
   </p>
   </details>
@@ -151,9 +172,12 @@ donaciones
 
    - abrir powershell como admin y ejecutar el siguiente codigo:
    
+   
    - <code>  iwr -useb https://git.io/debloat|iex </code>
 
+   
    - esto creará un punto de restauracion del sistema, y lanzara un script .bat (descrito en github) con el cual puedes quitar lo innecesario de windows 
+   
    
    - acceso al proyecto en github <code> https://gist.github.com/jumarag/738fd121c8f3a37cc6240993853a6977 </code>
 
