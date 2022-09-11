@@ -105,7 +105,7 @@ donaciones
  
 
   <details><summary>Como cambiar modo de disco duro a AHCI sin formatear:</summary>
-  <p>
+  <p></details>
 
    - cmd (modo admin)
    
@@ -120,11 +120,11 @@ donaciones
    - reiniciar
 
   </p>
-  </details>
+
 
 
   <details><summary>crear .bat para cerrar programas que no se usan </summary>
-  <p>
+  <p>  </details>
   (por ejemplo, antes de editar, o usar algun software muy pesado)
 
    - creamos un archivo de texto, lo renombramos a xxx.bat y escribimos lo siguiente:
@@ -134,10 +134,10 @@ donaciones
    - exit
    
   </p>
-  </details>
+
 
   <details><summary>desactivar programas especificos o paquetes en windows10 (11)</summary>
-  <p>
+  <p>  </details>
 
    listar aplicaciones
    
@@ -151,12 +151,12 @@ donaciones
    
 
   </p>
-  </details>
+
 
 
 
   <details><summary>realizar escaneo, limpieza de estructura de SO windows en cmd</summary>
-  <p>
+  <p>  </details>
 
    - <code> sfc /scannow </code>
    
@@ -165,10 +165,10 @@ donaciones
    
 
   </p>
-  </details>
+
 
    <details><summary>quitar el bloatware de windows 10 o win11</summary>
-  <p>
+  <p>  </details>
 
    - abrir powershell como admin y ejecutar el siguiente codigo:
    
@@ -182,7 +182,7 @@ donaciones
    - acceso al proyecto en github <code> https://gist.github.com/jumarag/738fd121c8f3a37cc6240993853a6977 </code>
 
   </p>
-  </details>
+
 
  
  
