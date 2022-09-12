@@ -78,8 +78,7 @@ donaciones
    
    - para ejecutarlo en modo administrador, segundo boton del mouse en el icono de la aplicacion, "ejecutar como administrador" 
    
-  </p>
-  </details>
+  </p> </details>
 
 
  <details><summary> crear textos con detalle de contenido </summary>
@@ -96,8 +95,7 @@ donaciones
  
    - <code> dir /s /w >nombrededirectorio.txt </code>
    
-  </p>
-  </details>
+  </p> </details>
  
  
  
@@ -105,8 +103,7 @@ donaciones
  
 
   <details><summary>Como cambiar modo de disco duro a AHCI sin formatear:</summary>
-  <p></details>
-
+  <p>
    - cmd (modo admin)
    
    - <code> bcdedit /set {current} safeboot minimal </code>
@@ -119,12 +116,13 @@ donaciones
    
    - reiniciar
 
-  </p>
+  </p> </details>
+
 
 
 
   <details><summary>crear .bat para cerrar programas que no se usan </summary>
-  <p>  </details>
+  <p>  
   (por ejemplo, antes de editar, o usar algun software muy pesado)
 
    - creamos un archivo de texto, lo renombramos a xxx.bat y escribimos lo siguiente:
@@ -133,11 +131,11 @@ donaciones
    - echo off
    - exit
    
-  </p>
+  </p> </details>
 
 
   <details><summary>desactivar programas especificos o paquetes en windows10 (11)</summary>
-  <p>  </details>
+  <p>  
 
    listar aplicaciones
    
@@ -150,13 +148,13 @@ donaciones
    - <code> DISM /Online /Remove–ProvisionedAppxPackage /PackageName:PACKAGENAME </code>
    
 
-  </p>
+  </p> </details>
 
 
 
 
   <details><summary>realizar escaneo, limpieza de estructura de SO windows en cmd</summary>
-  <p>  </details>
+  <p>  
 
    - <code> sfc /scannow </code>
    
@@ -164,11 +162,11 @@ donaciones
    - <code> DISM.exe /Online /Cleanup-image /Restorehealth </code>
    
 
-  </p>
+  </p> </details>
 
 
    <details><summary>quitar el bloatware de windows 10 o win11</summary>
-  <p>  </details>
+  <p> 
 
    - abrir powershell como admin y ejecutar el siguiente codigo:
    
@@ -181,14 +179,11 @@ donaciones
    
    - acceso al proyecto en github <code> https://gist.github.com/jumarag/738fd121c8f3a37cc6240993853a6977 </code>
 
-  </p>
+  </p>  </details>
+
+  </p> </details>
 
 
- 
- 
- 
- </p>
-</details>
 
 ## Bash Linux
 
