@@ -213,6 +213,48 @@ donaciones
     -device ide-hd,bus=sata.4,drive=SystemDisk \
    en el mismo archivo, se puede editar la memoria y la cantidad de nucleos, hilos.
    
+   </p></details>
+
+   
+   <p> VM ORACLE <details>
+   
+    iniciar servicio lincebi (en caso que no este funcionando)
+   - sudo -u lincebi /opt/lincebi/start-pentaho.sh
+   - sudo docker run -d -p 8080:8080 repo.stratebi.com/lincebi/lincebi-cloud:8.3
+   - lincebi
+    
+   </p></details>
+    
+    
+    <details><summary> **** instalar Rstudio ubuntu ARM (ampere) *****   </summary>
+     <p>
+  <code>
+   
+  - sudo apt install r-base
+  - sudo apt install r-base-html
+  - sudo apt install r-base
+  - sudo apt install r-base-core
+  - sudo apt install r-recommended
+  - sudo apt install -y g++ gcc gfortran libreadline-dev libx11-dev libxt-dev                     libpng-dev libjpeg-dev libcairo2-dev xvfb                     libbz2-dev libzstd-dev liblzma-dev libtiff5                     libssh-dev libgit2-dev libcurl4-openssl-dev                     libblas-dev liblapack-dev libopenblas-base                     zlib1g-dev openjdk-11-jdk                     texinfo texlive texlive-fonts-extra                     screen wget libpcre2-dev make 
+  - cd /usr/local/src
+  - sudo wget https://cran.rstudio.com/src/base/R-4/R-4.2.1.tar.gz
+  - sudo su
+  - tar zxvf R-4.2.1.tar.gz
+  - cd R-4.2.1
+  - ./configure --enable-R-shlib --with-blas --with-lapack #optional
+  - make
+  - make install
+  - cd ..
+  - rm -rf R-4.2.1*
+  - exit
+  - R
+   
+  </code>
+  </p>  </details>    
+   iniciar R Studio Server en navegador http://IP:8787/auth-sign-in?appUri=%2F
+   usar credenciales creadas durante la instalacion
+   
+
    
    
    
