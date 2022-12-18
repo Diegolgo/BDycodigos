@@ -278,10 +278,18 @@ donaciones
           
       -en terminal deberia bastar
           
-      -  jupter hub
+      -  sudo jupterhub
         y entrar al navegador desde cualquier equipo:
           http://144.22.33.233:8000/
     
+   si no esta funcionando, generar el siguiente report de proxy y darle a kill el numero de proceso, luego re lanzar sudo jupyterhub
+   
+   ps aux | grep configurable-http-proxy
+   
+   tambien se pueden probar el siguiente commando 
+   unset http_proxy
+   
+   
   </p> </details>
 
 
