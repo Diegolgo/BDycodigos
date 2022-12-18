@@ -161,7 +161,15 @@ donaciones
 
    - <code> DISM.exe /Online /Cleanup-image /Restorehealth </code>
    
-
+   
+   ***otros codigos para lo mismo por parte:
+     
+     -DISM /Online /Cleanup /CheckHealth
+     -DISM /Online /Cleanup /ScanHealth
+     -DISM /Online /Cleanup /RestoreHealth
+   
+   
+   
   </p> </details>
 
 
@@ -182,6 +190,21 @@ donaciones
   </p>  </details>
 
   </p> </details>
+
+
+
+  <details><summary>comando para reiniciar a la bios desde cmd</summary>
+  <p>
+
+   -  shutdown /r /fw /f /t 0
+   
+  </p> </details>
+
+
+ <details><summary> crear textos con detalle de contenido </summary>
+<p> 
+
+
 
 
 
@@ -226,7 +249,7 @@ donaciones
    </p></details>
     
     
-    <details><summary> **** instalar Rstudio ubuntu ARM (ampere) *****   </summary>
+    <details><summary> **** instalar Rstudio server en linux ubuntu ARM (ampere) *****   </summary>
      <p>
   <code>
    
@@ -253,14 +276,24 @@ donaciones
   </p>  </details>    
    iniciar R Studio Server en navegador http://IP:8787/auth-sign-in?appUri=%2F
    usar credenciales creadas durante la instalacion
-   
-
-   
-   
-   
+    
 
   </p>
   </details>
+
+  <details><summary>comando para iniciar jupyter notebook (hub) tiene spypark</summary>
+   <p>
+
+   - 
+   -en terminal deberia bastar
+    
+   -  jupter hub
+    y entrar al navegador desde cualquier equipo:
+    
+    http://144.22.33.233:8000/
+   
+  </p> </details>
+
 
  </p>
 </details>
