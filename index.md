@@ -63,11 +63,11 @@ donaciones
 
 ## MS-DOS Windows
 
-      <details><summary> mostrar </summary>
-      <p> 
+  <details><summary> mostrar </summary>
+  <p> 
 
-      <details><summary>Usar MS-DOS (CMD) o command.com o consola de comandos.</summary>
-      <p>
+  <details><summary>Usar MS-DOS (CMD) o command.com o consola de comandos.</summary>
+  <p>
 
         
         - inicio
@@ -78,51 +78,50 @@ donaciones
         
         - para ejecutarlo en modo administrador, segundo boton del mouse en el icono de la aplicacion, "ejecutar como administrador" 
         
-      </p> </details>
+  </p> </details>
 
 
-      <details><summary> crear textos con detalle de contenido </summary>
-      <p> 
+  <details><summary> crear textos con detalle de contenido </summary>
+  <p> 
 
+  - cmd
         
-          - cmd
+  - para ejecutarlo en modo administrador, segundo boton del mouse en el icono de la aplicacion, "ejecutar como administrador" 
         
-          - para ejecutarlo en modo administrador, segundo boton del mouse en el icono de la aplicacion, "ejecutar como administrador" 
+  - entrar en el directorio que necesito mapear
         
-          - entrar en el directorio que necesito mapear
+  - <code> tree >nombredearchivo.txt /f /a </code>
         
-          - <code> tree >nombredearchivo.txt /f /a </code>
-        
-          - <code> dir /s /w >nombrededirectorio.txt </code>
+  - <code> dir /s /w >nombrededirectorio.txt </code>
           
-      </p> </details>
+  </p> </details>
       
     
     
     
     
 
-      <details><summary>Como cambiar modo de disco duro a AHCI sin formatear:</summary>
-      <p>
+  <details><summary>Como cambiar modo de disco duro a AHCI sin formatear:</summary>
+  <p>
         - cmd (modo admin)
         
-        - <code> bcdedit /set {current} safeboot minimal </code>
+  - <code> bcdedit /set {current} safeboot minimal </code>
         
-          #### reiniciar a la bios, activar modo ACHI y listo. entrar a windows de nuevo
+      #### reiniciar a la bios, activar modo ACHI y listo. entrar a windows de nuevo
         
-        - cmd
+    - cmd
         
-        - <code> bcdedit /deletevalue {current} safeboot </code>
+    - <code> bcdedit /deletevalue {current} safeboot </code>
         
-        - reiniciar
+    - reiniciar
 
-      </p> </details>
-
-
+  </p> </details>
 
 
-      <details><summary>crear .bat para cerrar programas que no se usan </summary>
-      <p>  
+
+
+  <details><summary>crear .bat para cerrar programas que no se usan </summary>
+  <p>  
         (por ejemplo, antes de editar, o usar algun software muy pesado)
 
         - creamos un archivo de texto, lo renombramos a xxx.bat y escribimos lo siguiente:
@@ -131,30 +130,30 @@ donaciones
         - echo off
         - exit
         
-      </p> </details>
+  </p> </details>
 
 
-      <details><summary>desactivar programas especificos o paquetes en windows10 (11)</summary>
-        <p>  
+  <details><summary>desactivar programas especificos o paquetes en windows10 (11)</summary>
+  <p>  
 
         listar aplicaciones
         
 
-        - <code> DISM /Online /Get–ProvisionedAppxPackages | select–string Packagename </code>
+  - <code> DISM /Online /Get–ProvisionedAppxPackages | select–string Packagename </code>
         
         
         desinstalarlas (cambiando nombre del paquete)
         
-        - <code> DISM /Online /Remove–ProvisionedAppxPackage /PackageName:PACKAGENAME </code>
+  - <code> DISM /Online /Remove–ProvisionedAppxPackage /PackageName:PACKAGENAME </code>
         
 
-      </p> </details>
+  </p> </details>
 
 
 
 
-      <details><summary>realizar escaneo, limpieza de estructura de SO windows en cmd</summary>
-      <p>  
+  <details><summary>realizar escaneo, limpieza de estructura de SO windows en cmd</summary>
+  <p>  
 
           - <code> sfc /scannow </code>
           
@@ -170,30 +169,31 @@ donaciones
         
         
         
-      </p> </details>
+  </p> </details>
 
 
-      <details><summary>quitar el bloatware de windows 10 o win11</summary>
-      <p> 
+  <details><summary>quitar el bloatware de windows 10 o win11</summary>
+  <p> 
 
-        - abrir powershell como admin y ejecutar el siguiente codigo:
+    - abrir powershell como admin y ejecutar el siguiente codigo:
         
-        - <code>  iwr -useb https://git.io/debloat|iex </code>
+  <code>  iwr -useb https://git.io/debloat|iex </code>
 
-        - esto creará un punto de restauracion del sistema, y lanzara un script .bat (descrito en github) con el cual puedes quitar lo innecesario de windows 
+    - esto creará un punto de restauracion del sistema, y lanzara un script .bat (descrito en github) con el cual puedes quitar lo innecesario de windows 
         
-        - acceso al proyecto en github <code> https://gist.github.com/jumarag/738fd121c8f3a37cc6240993853a6977 </code>
+    - acceso al proyecto en github 
+- <code> https://gist.github.com/jumarag/738fd121c8f3a37cc6240993853a6977 </code>
 
-      </p>  </details>
+  </p>  </details>
 
 
 
-      <details><summary>comando para reiniciar a la bios desde cmd</summary>
-      <p>
+  <details><summary>comando para reiniciar a la bios desde cmd</summary>
+  <p>
 
-        <code>  shutdown /r /fw /f /t 0  </code>
+  <code>  shutdown /r /fw /f /t 0  </code>
         
-      </p> </details>
+  </p> </details>
 
 
 
@@ -209,8 +209,8 @@ donaciones
           La mayor parte del tiempo he usado distribuciones basadas en debian, por lo que los comandos estan enfocados en ubuntu (probados 2022)
           - sudo apt-get update
           
-          <code> sudo apt-get install android-tools-adb  </code>
-          <code> sudo apt-get install android-tools-fastboot </code>
+        <code> sudo apt-get install android-tools-adb  </code>
+        <code> sudo apt-get install android-tools-fastboot </code>
           
           maquina virtual MACOS:
           - descargar el paquete https://github.com/foxlet/macOS-Simple-KVM/archive/refs/heads/master.zip
@@ -230,19 +230,19 @@ donaciones
       </p></details>
 
     
-      <details><summary>VM ORACLE </summary>
-      <p>
+  <details><summary>VM ORACLE </summary>
+  <p>
       
           iniciar servicio lincebi (en caso que no este funcionando)
           <code> sudo -u lincebi /opt/lincebi/start-pentaho.sh </code>
           <code> sudo docker run -d -p 8080:8080 repo.stratebi.com/lincebi/lincebi-cloud:8.3 </code>
           <code> lincebi </code>
           
-      </p></details>
+  </p></details>
         
       
-        <details><summary> **** instalar Rstudio server en linux ubuntu ARM (ampere) *****   </summary>
-        <p>
+  <details><summary> **** instalar Rstudio server en linux ubuntu ARM (ampere) *****   </summary>
+  <p>
         <code>
           - sudo apt install r-base
           - sudo apt install r-base-html
@@ -264,17 +264,17 @@ donaciones
           - R
         </code>
       
-        </p>  </details>    
+  </p>  </details>    
     
-    <details><summary> Iniciar Rstudio Server  adb</summary>
-    <p> 
+  <details><summary> Iniciar Rstudio Server  adb</summary>
+  <p> 
         iniciar R Studio Server en navegador http://IP:8787/auth-sign-in?appUri=%2F
               http://144.22.33.233:8787
               usar credenciales creadas durante la instalacion
         </p>  </details>   
         
-      <details><summary>comando para iniciar jupyter notebook (hub) tiene spypark</summary>
-      <p>
+  <details><summary>comando para iniciar jupyter notebook (hub) tiene spypark</summary>
+  <p>
           
       -en terminal deberia bastar
           
@@ -282,7 +282,7 @@ donaciones
         y entrar al navegador desde cualquier equipo:
           http://144.22.33.233:8000/
     
-    </p> </details>
+  </p> </details>
 
 
   </p>
@@ -293,23 +293,23 @@ donaciones
 
   <details><summary>mostrar</summary>
   <p>
-      <details><summary>usar adb</summary>
-      <p>
+  <details><summary>usar adb</summary>
+  <p>
           abrir cmd, navegar a la carpeta de ADB (se debe instalar), o abrir ventana de comandos en dicha carpeta, por ej: cd/adb
           adb devices
           si el dispositivo esta activo, y con modo de depuracion activado via usb, se vera su codigo. en caso contrario habilitarlo en android.
 
           para iniciar el bootloader (desde android, conectado por usb)
           - adb restart bootloader
-
+  
           para reiniciar el dispositivo
           - adb restart 
-      </p>
-      </details>
+  </p>
+  </details>
 
 
-      <details><summary>desbloquear bootloader (en modo fastboot)</summary>
-      <p>
+  <details><summary>desbloquear bootloader (en modo fastboot)</summary>
+  <p>
 
           - fastboot flashing unlock
           - fastboot flashin unlock_critical
@@ -320,18 +320,18 @@ donaciones
           - fastboot flashing lock_critical
 
 
-      </p>
-      </details>
+  </p>
+  </details>
 
 
 
-    <details><summary>otro</summary>
-    <p>
+  <details><summary>otro</summary>
+  <p>
 
       escribir aqui el texto a expandir.
 
-    </p>
-    </details>
+  </p>
+  </details>
 
   </p>
   </details>
@@ -342,41 +342,41 @@ donaciones
   <p> 
 
 
-    <details><summary>ocultar texto, para expandir al hacer click (collapse), (eliminar los espacios despues de cada <)</summary>
-    <p>
+  <details><summary>ocultar texto, para expandir al hacer click (collapse), (eliminar los espacios despues de cada <)</summary>
+  <p>
 
 
-    </p>
-    </details>
+  </p>
+  </details>
 
-    <details>< summary>click para mostrar</summary>
-    <p>
+  <details>< summary>click para mostrar</summary>
+  <p>
       < details>< summary>click para mostrar< / summary>
       < p>
       escribir aqui el texto a expandir. (sin espacios)
       < /p>
       < /details>
 
-    </p>
-    </details>
+  </p>
+  </details>
 
 
 
-    <details><summary>usar themes en github</summary>
-    <p>
+  <details><summary>usar themes en github</summary>
+  <p>
 
     Para usar themes en github con Ruby, se necesita instalar antes de usar en Fedora usar el siguiente comando antes de realizar el bundle.
     - sudo dnf install ruby ruby-devel openssl-devel redhat-rpm-config @development-tools
     - fuente y otras distros: https://jekyllrb.com/docs/installation/other-linux/
 
-    </p>
-    </details>
+  </p>
+  </details>
 
   
   
   
-    <details><summary>insertar imagenes em github (webpage):</summary>
-    <p>
+  <details><summary>insertar imagenes em github (webpage):</summary>
+  <p>
     usar ! [comentario] (url) sin espacios,  (el link entre parentesis)
     ejemplo (quitar espacio y se verá la imagen insertada: 
 
@@ -386,8 +386,8 @@ donaciones
     ![imagen de gatito](https://cdn2.actitudfem.com/media/files/styles/big_img/public/images/2019/08/de-donde-salio-el-meme-del-gato-en-la-mesa-portada.jpg)
 
 
-      </p>
-    </details>
+  </p>
+  </details>
 
   </p>
   </details>
