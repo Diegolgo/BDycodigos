@@ -63,137 +63,137 @@ donaciones
 
 ## MS-DOS Windows
 
-<details><summary> mostrar </summary>
-<p> 
+      <details><summary> mostrar </summary>
+      <p> 
 
-  <details><summary>Usar MS-DOS (CMD) o command.com o consola de comandos.</summary>
-  <p>
+        <details><summary>Usar MS-DOS (CMD) o command.com o consola de comandos.</summary>
+        <p>
 
-   
-   - inicio
-   
-   - ejecutar o buscar
-   
-   - cmd
-   
-   - para ejecutarlo en modo administrador, segundo boton del mouse en el icono de la aplicacion, "ejecutar como administrador" 
-   
-  </p> </details>
+        
+        - inicio
+        
+        - ejecutar o buscar
+        
+        - cmd
+        
+        - para ejecutarlo en modo administrador, segundo boton del mouse en el icono de la aplicacion, "ejecutar como administrador" 
+        
+        </p> </details>
 
 
-  <details><summary> crear textos con detalle de contenido </summary>
-  <p> 
+        <details><summary> crear textos con detalle de contenido </summary>
+        <p> 
 
-  
-    - cmd
-  
-    - para ejecutarlo en modo administrador, segundo boton del mouse en el icono de la aplicacion, "ejecutar como administrador" 
-  
-    - entrar en el directorio que necesito mapear
-  
-    - <code> tree >nombredearchivo.txt /f /a </code>
-  
-    - <code> dir /s /w >nombrededirectorio.txt </code>
+        
+          - cmd
+        
+          - para ejecutarlo en modo administrador, segundo boton del mouse en el icono de la aplicacion, "ejecutar como administrador" 
+        
+          - entrar en el directorio que necesito mapear
+        
+          - <code> tree >nombredearchivo.txt /f /a </code>
+        
+          - <code> dir /s /w >nombrededirectorio.txt </code>
+          
+          </p> </details>
+      
     
-    </p> </details>
-  
- 
- 
- 
- 
+    
+    
+    
 
-  <details><summary>Como cambiar modo de disco duro a AHCI sin formatear:</summary>
-  <p>
-   - cmd (modo admin)
-   
-   - <code> bcdedit /set {current} safeboot minimal </code>
-   
-     #### reiniciar a la bios, activar modo ACHI y listo. entrar a windows de nuevo
-   
-   - cmd
-   
-   - <code> bcdedit /deletevalue {current} safeboot </code>
-   
-   - reiniciar
+        <details><summary>Como cambiar modo de disco duro a AHCI sin formatear:</summary>
+        <p>
+        - cmd (modo admin)
+        
+        - <code> bcdedit /set {current} safeboot minimal </code>
+        
+          #### reiniciar a la bios, activar modo ACHI y listo. entrar a windows de nuevo
+        
+        - cmd
+        
+        - <code> bcdedit /deletevalue {current} safeboot </code>
+        
+        - reiniciar
 
-  </p> </details>
+        </p> </details>
 
 
 
 
-  <details><summary>crear .bat para cerrar programas que no se usan </summary>
-  <p>  
-  (por ejemplo, antes de editar, o usar algun software muy pesado)
+        <details><summary>crear .bat para cerrar programas que no se usan </summary>
+        <p>  
+        (por ejemplo, antes de editar, o usar algun software muy pesado)
 
-   - creamos un archivo de texto, lo renombramos a xxx.bat y escribimos lo siguiente:
-   - echo off
-   - taskkil /im nombredelproceso.exe /F
-   - echo off
-   - exit
-   
-  </p> </details>
-
-
-  <details><summary>desactivar programas especificos o paquetes en windows10 (11)</summary>
-  <p>  
-
-   listar aplicaciones
-   
-
-   - <code> DISM /Online /Get–ProvisionedAppxPackages | select–string Packagename </code>
-   
-   
-   desinstalarlas (cambiando nombre del paquete)
-   
-   - <code> DISM /Online /Remove–ProvisionedAppxPackage /PackageName:PACKAGENAME </code>
-   
-
-  </p> </details>
+        - creamos un archivo de texto, lo renombramos a xxx.bat y escribimos lo siguiente:
+        - echo off
+        - taskkil /im nombredelproceso.exe /F
+        - echo off
+        - exit
+        
+        </p> </details>
 
 
+        <details><summary>desactivar programas especificos o paquetes en windows10 (11)</summary>
+        <p>  
 
+        listar aplicaciones
+        
 
-  <details><summary>realizar escaneo, limpieza de estructura de SO windows en cmd</summary>
-  <p>  
+        - <code> DISM /Online /Get–ProvisionedAppxPackages | select–string Packagename </code>
+        
+        
+        desinstalarlas (cambiando nombre del paquete)
+        
+        - <code> DISM /Online /Remove–ProvisionedAppxPackage /PackageName:PACKAGENAME </code>
+        
 
-     - <code> sfc /scannow </code>
-     
-
-     - <code> DISM.exe /Online /Cleanup-image /Restorehealth </code>
-   
-   
-    ***otros codigos para lo mismo por parte:
-     
-     -DISM /Online /Cleanup /CheckHealth
-     -DISM /Online /Cleanup /ScanHealth
-     -DISM /Online /Cleanup /RestoreHealth
-   
-   
-   
-  </p> </details>
-
-
-   <details><summary>quitar el bloatware de windows 10 o win11</summary>
-  <p> 
-
-   - abrir powershell como admin y ejecutar el siguiente codigo:
-   
-   - <code>  iwr -useb https://git.io/debloat|iex </code>
-
-   - esto creará un punto de restauracion del sistema, y lanzara un script .bat (descrito en github) con el cual puedes quitar lo innecesario de windows 
-   
-   - acceso al proyecto en github <code> https://gist.github.com/jumarag/738fd121c8f3a37cc6240993853a6977 </code>
-
-  </p>  </details>
+        </p> </details>
 
 
 
-  <details><summary>comando para reiniciar a la bios desde cmd</summary>
-  <p>
 
-   <code>  shutdown /r /fw /f /t 0  </code>
-   
-  </p> </details>
+        <details><summary>realizar escaneo, limpieza de estructura de SO windows en cmd</summary>
+        <p>  
+
+          - <code> sfc /scannow </code>
+          
+
+          - <code> DISM.exe /Online /Cleanup-image /Restorehealth </code>
+        
+        
+          ***otros codigos para lo mismo por parte:
+          
+          -DISM /Online /Cleanup /CheckHealth
+          -DISM /Online /Cleanup /ScanHealth
+          -DISM /Online /Cleanup /RestoreHealth
+        
+        
+        
+        </p> </details>
+
+
+        <details><summary>quitar el bloatware de windows 10 o win11</summary>
+        <p> 
+
+        - abrir powershell como admin y ejecutar el siguiente codigo:
+        
+        - <code>  iwr -useb https://git.io/debloat|iex </code>
+
+        - esto creará un punto de restauracion del sistema, y lanzara un script .bat (descrito en github) con el cual puedes quitar lo innecesario de windows 
+        
+        - acceso al proyecto en github <code> https://gist.github.com/jumarag/738fd121c8f3a37cc6240993853a6977 </code>
+
+        </p>  </details>
+
+
+
+        <details><summary>comando para reiniciar a la bios desde cmd</summary>
+        <p>
+
+        <code>  shutdown /r /fw /f /t 0  </code>
+        
+        </p> </details>
 
 
 
