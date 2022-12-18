@@ -81,22 +81,22 @@ donaciones
   </p> </details>
 
 
- <details><summary> crear textos con detalle de contenido </summary>
-<p> 
+  <details><summary> crear textos con detalle de contenido </summary>
+  <p> 
 
- 
-   - cmd
- 
-   - para ejecutarlo en modo administrador, segundo boton del mouse en el icono de la aplicacion, "ejecutar como administrador" 
- 
-   - entrar en el directorio que necesito mapear
- 
-   - <code> tree >nombredearchivo.txt /f /a </code>
- 
-   - <code> dir /s /w >nombrededirectorio.txt </code>
-   
-  </p> </details>
- 
+  
+    - cmd
+  
+    - para ejecutarlo en modo administrador, segundo boton del mouse en el icono de la aplicacion, "ejecutar como administrador" 
+  
+    - entrar en el directorio que necesito mapear
+  
+    - <code> tree >nombredearchivo.txt /f /a </code>
+  
+    - <code> dir /s /w >nombrededirectorio.txt </code>
+    
+    </p> </details>
+  
  
  
  
@@ -198,195 +198,197 @@ donaciones
 
 
 
+
 ## Bash Linux
 
-<details><summary>mostrar</summary>
-<p>
-    <details><summary>herramientas para usar adb y fastboot en linux</summary>
-    </p>
+  <details><summary>mostrar</summary>
+  <p>
+      <details><summary>herramientas para usar adb y fastboot en linux</summary>
+      </p>
 
-        La mayor parte del tiempo he usado distribuciones basadas en debian, por lo que los comandos estan enfocados en ubuntu (probados 2022)
-        - sudo apt-get update
-        
-        <code> sudo apt-get install android-tools-adb  </code>
-        <code> sudo apt-get install android-tools-fastboot </code>
-        
-        maquina virtual MACOS:
-        - descargar el paquete https://github.com/foxlet/macOS-Simple-KVM/archive/refs/heads/master.zip
-        instalar:
-        <code> sudo apt-get install qemu-system qemu-utils python3 python3-pip </code>
-        crear una carpeta con espacio suficiente para la maquina virtual (64gb por defecto en estos comandos)
-        abrir terminal en la carpeta descarga, ya descomprimida y ejecutar (Agregar --high-sierra, --mojave, por defecto baja catalina)
-        <code> bash jumpstart.sh </code>
-        el comando anterior descargará un archivo BaseSystem.img
-        crear el archivo que contendrá la maquina virtual
-        <code> qemu-img create -f qcow2 MyDisk.qcow2 64G </code>
-        abrir con editor de texto el basic.sh y pegar las siguientes lineas al final (si cambiaron el nombre MyDisk poner el que corresponda:
-        -drive id=SystemDisk,if=none,file=MyDisk.qcow2 \
-        -device ide-hd,bus=sata.4,drive=SystemDisk \
-        en el mismo archivo, se puede editar la memoria y la cantidad de nucleos, hilos.
-    
-    </p></details>
-
-   
-    <details><summary>VM ORACLE </summary>
-    <p>
-    
-        iniciar servicio lincebi (en caso que no este funcionando)
-        <code> sudo -u lincebi /opt/lincebi/start-pentaho.sh </code>
-        <code> sudo docker run -d -p 8080:8080 repo.stratebi.com/lincebi/lincebi-cloud:8.3 </code>
-        <code> lincebi </code>
-        
-    </p></details>
+          La mayor parte del tiempo he usado distribuciones basadas en debian, por lo que los comandos estan enfocados en ubuntu (probados 2022)
+          - sudo apt-get update
+          
+          <code> sudo apt-get install android-tools-adb  </code>
+          <code> sudo apt-get install android-tools-fastboot </code>
+          
+          maquina virtual MACOS:
+          - descargar el paquete https://github.com/foxlet/macOS-Simple-KVM/archive/refs/heads/master.zip
+          instalar:
+          <code> sudo apt-get install qemu-system qemu-utils python3 python3-pip </code>
+          crear una carpeta con espacio suficiente para la maquina virtual (64gb por defecto en estos comandos)
+          abrir terminal en la carpeta descarga, ya descomprimida y ejecutar (Agregar --high-sierra, --mojave, por defecto baja catalina)
+          <code> bash jumpstart.sh </code>
+          el comando anterior descargará un archivo BaseSystem.img
+          crear el archivo que contendrá la maquina virtual
+          <code> qemu-img create -f qcow2 MyDisk.qcow2 64G </code>
+          abrir con editor de texto el basic.sh y pegar las siguientes lineas al final (si cambiaron el nombre MyDisk poner el que corresponda:
+          -drive id=SystemDisk,if=none,file=MyDisk.qcow2 \
+          -device ide-hd,bus=sata.4,drive=SystemDisk \
+          en el mismo archivo, se puede editar la memoria y la cantidad de nucleos, hilos.
       
+      </p></details>
+
     
-      <details><summary> **** instalar Rstudio server en linux ubuntu ARM (ampere) *****   </summary>
+      <details><summary>VM ORACLE </summary>
       <p>
-      <code>
-        - sudo apt install r-base
-        - sudo apt install r-base-html
-        - sudo apt install r-base
-        - sudo apt install r-base-core
-        - sudo apt install r-recommended
-        - sudo apt install -y g++ gcc gfortran libreadline-dev libx11-dev libxt-dev                     libpng-dev libjpeg-dev libcairo2-dev xvfb                     libbz2-   dev libzstd-dev liblzma-dev libtiff5                     libssh-dev libgit2-dev libcurl4-openssl-dev                     libblas-dev liblapack-dev libopenblas-base                     zlib1g-dev openjdk-11-jdk                     texinfo texlive texlive-fonts-extra                     screen wget libpcre2-dev make 
-        - cd /usr/local/src
-        - sudo wget https://cran.rstudio.com/src/base/R-4/R-4.2.1.tar.gz
-        - sudo su
-        - tar zxvf R-4.2.1.tar.gz
-        - cd R-4.2.1
-        - ./configure --enable-R-shlib --with-blas --with-lapack #optional
-        - make
-        - make install
-        - cd ..
-        - rm -rf R-4.2.1*
-        - exit
-        - R
-      </code>
-    
-      </p>  </details>    
-   
-   <details><summary> Iniciar Rstudio Server  adb</summary>
-   <p> 
-      iniciar R Studio Server en navegador http://IP:8787/auth-sign-in?appUri=%2F
-            http://144.22.33.233:8787
-            usar credenciales creadas durante la instalacion
-      </p>  </details>   
       
-    <details><summary>comando para iniciar jupyter notebook (hub) tiene spypark</summary>
-    <p>
+          iniciar servicio lincebi (en caso que no este funcionando)
+          <code> sudo -u lincebi /opt/lincebi/start-pentaho.sh </code>
+          <code> sudo docker run -d -p 8080:8080 repo.stratebi.com/lincebi/lincebi-cloud:8.3 </code>
+          <code> lincebi </code>
+          
+      </p></details>
         
-     -en terminal deberia bastar
+      
+        <details><summary> **** instalar Rstudio server en linux ubuntu ARM (ampere) *****   </summary>
+        <p>
+        <code>
+          - sudo apt install r-base
+          - sudo apt install r-base-html
+          - sudo apt install r-base
+          - sudo apt install r-base-core
+          - sudo apt install r-recommended
+          - sudo apt install -y g++ gcc gfortran libreadline-dev libx11-dev libxt-dev                     libpng-dev libjpeg-dev libcairo2-dev xvfb                     libbz2-   dev libzstd-dev liblzma-dev libtiff5                     libssh-dev libgit2-dev libcurl4-openssl-dev                     libblas-dev liblapack-dev libopenblas-base                     zlib1g-dev openjdk-11-jdk                     texinfo texlive texlive-fonts-extra                     screen wget libpcre2-dev make 
+          - cd /usr/local/src
+          - sudo wget https://cran.rstudio.com/src/base/R-4/R-4.2.1.tar.gz
+          - sudo su
+          - tar zxvf R-4.2.1.tar.gz
+          - cd R-4.2.1
+          - ./configure --enable-R-shlib --with-blas --with-lapack #optional
+          - make
+          - make install
+          - cd ..
+          - rm -rf R-4.2.1*
+          - exit
+          - R
+        </code>
+      
+        </p>  </details>    
+    
+    <details><summary> Iniciar Rstudio Server  adb</summary>
+    <p> 
+        iniciar R Studio Server en navegador http://IP:8787/auth-sign-in?appUri=%2F
+              http://144.22.33.233:8787
+              usar credenciales creadas durante la instalacion
+        </p>  </details>   
         
-     -  jupter hub
-      y entrar al navegador desde cualquier equipo:
-        http://144.22.33.233:8000/
-   
-  </p> </details>
+      <details><summary>comando para iniciar jupyter notebook (hub) tiene spypark</summary>
+      <p>
+          
+      -en terminal deberia bastar
+          
+      -  jupter hub
+        y entrar al navegador desde cualquier equipo:
+          http://144.22.33.233:8000/
+    
+    </p> </details>
 
 
- </p>
-</details>
+  </p>
+  </details>
+
 
 ## Android
 
-<details><summary>mostrar</summary>
-<p>
-    <details><summary>usar adb</summary>
-    <p>
-        abrir cmd, navegar a la carpeta de ADB (se debe instalar), o abrir ventana de comandos en dicha carpeta, por ej: cd/adb
-        adb devices
-        si el dispositivo esta activo, y con modo de depuracion activado via usb, se vera su codigo. en caso contrario habilitarlo en android.
-
-        para iniciar el bootloader (desde android, conectado por usb)
-        - adb restart bootloader
-
-        para reiniciar el dispositivo
-        - adb restart 
-    </p>
-    </details>
-
-
-    <details><summary>desbloquear bootloader (en modo fastboot)</summary>
-    <p>
-
-        - fastboot flashing unlock
-        - fastboot flashin unlock_critical
-
-        bloquear bootloader % ojo que al desbloquear o bloquear el bootloader el telefono se reinicia de fabrica %
-
-        - fastboot flashing lock
-        - fastboot flashing lock_critical
-
-
-    </p>
-    </details>
-
-
-
-  <details><summary>otro</summary>
+  <details><summary>mostrar</summary>
   <p>
+      <details><summary>usar adb</summary>
+      <p>
+          abrir cmd, navegar a la carpeta de ADB (se debe instalar), o abrir ventana de comandos en dicha carpeta, por ej: cd/adb
+          adb devices
+          si el dispositivo esta activo, y con modo de depuracion activado via usb, se vera su codigo. en caso contrario habilitarlo en android.
 
-    escribir aqui el texto a expandir.
+          para iniciar el bootloader (desde android, conectado por usb)
+          - adb restart bootloader
+
+          para reiniciar el dispositivo
+          - adb restart 
+      </p>
+      </details>
+
+
+      <details><summary>desbloquear bootloader (en modo fastboot)</summary>
+      <p>
+
+          - fastboot flashing unlock
+          - fastboot flashin unlock_critical
+
+          bloquear bootloader % ojo que al desbloquear o bloquear el bootloader el telefono se reinicia de fabrica %
+
+          - fastboot flashing lock
+          - fastboot flashing lock_critical
+
+
+      </p>
+      </details>
+
+
+
+    <details><summary>otro</summary>
+    <p>
+
+      escribir aqui el texto a expandir.
+
+    </p>
+    </details>
 
   </p>
   </details>
-
-</p>
-</details>
 
 ##   Gitbhub pages 
 
-<details><summary> mostrar </summary>
-<p> 
+  <details><summary> mostrar </summary>
+  <p> 
 
 
-  <details><summary>ocultar texto, para expandir al hacer click (collapse), (eliminar los espacios despues de cada <)</summary>
-  <p>
-
-
-   </p>
-  </details>
-
-  <details>< summary>click para mostrar</summary>
-  <p>
-     < details>< summary>click para mostrar< / summary>
-    < p>
-     escribir aqui el texto a expandir. (sin espacios)
-     < /p>
-    < /details>
-
-  </p>
-  </details>
-
-
-
-  <details><summary>usar themes en github</summary>
-  <p>
-
-  Para usar themes en github con Ruby, se necesita instalar antes de usar en Fedora usar el siguiente comando antes de realizar el bundle.
-   - sudo dnf install ruby ruby-devel openssl-devel redhat-rpm-config @development-tools
-   - fuente y otras distros: https://jekyllrb.com/docs/installation/other-linux/
-
-  </p>
-  </details>
-
- 
- 
- 
-   <details><summary>insertar imagenes em github (webpage):</summary>
-  <p>
-  usar ! [comentario] (url) sin espacios,  (el link entre parentesis)
-  ejemplo (quitar espacio y se verá la imagen insertada: 
-
-   \ ! [imagen de gatito] ( https:// ejemplo-el-meme-del-gato-en-la-mesa-portada.jpg )
-
-
-   ![imagen de gatito](https://cdn2.actitudfem.com/media/files/styles/big_img/public/images/2019/08/de-donde-salio-el-meme-del-gato-en-la-mesa-portada.jpg)
+    <details><summary>ocultar texto, para expandir al hacer click (collapse), (eliminar los espacios despues de cada <)</summary>
+    <p>
 
 
     </p>
-  </details>
+    </details>
 
- </p>
-</details>
- 
+    <details>< summary>click para mostrar</summary>
+    <p>
+      < details>< summary>click para mostrar< / summary>
+      < p>
+      escribir aqui el texto a expandir. (sin espacios)
+      < /p>
+      < /details>
+
+    </p>
+    </details>
+
+
+
+    <details><summary>usar themes en github</summary>
+    <p>
+
+    Para usar themes en github con Ruby, se necesita instalar antes de usar en Fedora usar el siguiente comando antes de realizar el bundle.
+    - sudo dnf install ruby ruby-devel openssl-devel redhat-rpm-config @development-tools
+    - fuente y otras distros: https://jekyllrb.com/docs/installation/other-linux/
+
+    </p>
+    </details>
+
+  
+  
+  
+    <details><summary>insertar imagenes em github (webpage):</summary>
+    <p>
+    usar ! [comentario] (url) sin espacios,  (el link entre parentesis)
+    ejemplo (quitar espacio y se verá la imagen insertada: 
+
+    \ ! [imagen de gatito] ( https:// ejemplo-el-meme-del-gato-en-la-mesa-portada.jpg )
+
+
+    ![imagen de gatito](https://cdn2.actitudfem.com/media/files/styles/big_img/public/images/2019/08/de-donde-salio-el-meme-del-gato-en-la-mesa-portada.jpg)
+
+
+      </p>
+    </details>
+
+  </p>
+  </details>
+  
