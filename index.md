@@ -245,23 +245,48 @@ donaciones
   <p>
         <code>
           - sudo apt install r-base
+         
           - sudo apt install r-base-html
+         
           - sudo apt install r-base
+         
           - sudo apt install r-base-core
+         
           - sudo apt install r-recommended
-          - sudo apt install -y g++ gcc gfortran libreadline-dev libx11-dev libxt-dev                     libpng-dev libjpeg-dev libcairo2-dev xvfb                     libbz2-   dev libzstd-dev liblzma-dev libtiff5                     libssh-dev libgit2-dev libcurl4-openssl-dev                     libblas-dev liblapack-dev libopenblas-base                     zlib1g-dev openjdk-11-jdk                     texinfo texlive texlive-fonts-extra                     screen wget libpcre2-dev make 
+         
+          - sudo apt install -y g++ gcc gfortran libreadline-dev libx11-dev libxt-dev 
+         libpng-dev libjpeg-dev libcairo2-dev xvfb 
+         libbz2-   dev libzstd-dev liblzma-dev libtiff5 
+         libssh-dev libgit2-dev libcurl4-openssl-dev 
+         libblas-dev liblapack-dev libopenblas-base 
+         zlib1g-dev openjdk-11-jdk 
+         texinfo texlive texlive-fonts-extra 
+         screen wget libpcre2-dev make 
+         
           - cd /usr/local/src
+         
           - sudo wget https://cran.rstudio.com/src/base/R-4/R-4.2.1.tar.gz
+         
           - sudo su
+         
           - tar zxvf R-4.2.1.tar.gz
+         
           - cd R-4.2.1
+         
           - ./configure --enable-R-shlib --with-blas --with-lapack #optional
+         
           - make
+         
           - make install
+         
           - cd ..
+         
           - rm -rf R-4.2.1*
+         
           - exit
+         
           - R
+         
         </code>
       
   </p>  </details>    
@@ -269,7 +294,7 @@ donaciones
   <details><summary> Iniciar Rstudio Server  adb</summary>
   <p> 
         iniciar R Studio Server en navegador http://IP:8787/auth-sign-in?appUri=%2F
-              http://144.22.33.233:8787
+              http://(escribir IP aqui, por ejemplo xx.xxx.xxx.xxx) :8787
               usar credenciales creadas durante la instalacion
         </p>  </details>   
         
@@ -280,7 +305,7 @@ donaciones
           
       -  sudo jupterhub
         y entrar al navegador desde cualquier equipo:
-          http://144.22.33.233:8000/
+          http://(escribir IP aqui, por ejemplo xx.xxx.xxx.xxx):8000/
     
    si no esta funcionando, generar el siguiente report de proxy y darle a kill el numero de proceso, luego re lanzar sudo jupyterhub
    
@@ -288,6 +313,39 @@ donaciones
    
    tambien se pueden probar el siguiente commando 
    unset http_proxy
+   
+   
+  </p> </details>
+
+  <details><summary>BATOCERA (sistema linux emulacion y entretenimiento) </summary>
+  <p>
+          
+  - descargar imagen iso desde paginas oficiales
+  - instalar BalenaEtcher desde pagina oficial
+  - con balena etcher, seleccionar iso, y destino (por ejemplo disco duro, conectado, o memoria flash usb)
+  - conectar el medio en el equipo destino, y bootear desde el, se crearan las configuraciones iniciales automaticamente.
+  - copiar los bios que correspondan a la version en la carpeta BIOS
+  - copiar los roms a la carpeta roms que corresponda y todo listo.
+   
+   troubleshooting
+   1- equipos con tarjetas nvidia "antiguas" llamemosle drivers 300.xxx o anteriores, usar Batocera 30 maximo (por uso de drivers legacy)
+     - activar drivers legacy nvidia en archivo batocera.conf
+   2- en notebooks con pantalla rota, deberia tomar el hdmi de forma directa como pantalla inicial, en caso contrario, seguir estas instrucciones:
+       - arrancar equipo con batocera, si estamos en esta etapa, el hdmi no recibirá señal.
+       - ir a otro equipo del area local, y con Putty (software externo), abrir la ip del equipo batocera, (se puede ver desde el router), con el puerto 22, credenciales por defecto usuario: root, password: linux
+       - seguir los siguientes comandos:
+         - export DISPLAY=:0.0
+         - batocera-resolution listOutputs
+         - batocera-resolution setOutput <escribir aqui la salida deseada, vista en comando anterior, por ejemplo HDMI-1 >
+         - batocera-save-overlay
+       - con eso ya deberiamos poder visualizar el sistema mediante hdmi, para indicar resoluciones, en caso que no la este tomando de forma correcta:
+         - export DISPLAY=:0.0
+         - batocera-resolution listModes
+       - En esta etapa ya podriamos saber que resoluciones soporta, y podemos elegirla, editando el archivo /boot/batocera-boot.conf
+         -editando o agregando la siguiente linea por ejemplo (recordar que por defecto desde batocera 31 la resolucion es 1920 a 60hx): es.resolution=1280×720.59.94
+    3- Para instalar aplicaciones, por ejemplo navegadores, o flatpaks, se hace de forma analoga mediante comandos ssh.
+    
+   
    
    
   </p> </details>
